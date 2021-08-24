@@ -7,6 +7,7 @@ import HowToPlay from './HowToPlay';
 import NotForMe from './NotForMe';
 import LetsPlay from './LetsPlay.jsx';
 import CreateAccount from './CreateAccount.jsx';
+import BlackJack from './BlackJack';
 
 var App = () => {
   return (
@@ -31,6 +32,9 @@ var App = () => {
         </Route>
         <Route path='/createAccount' exact>
           <CreateAccount />
+        </Route>
+        <Route path='/BlackJack' exact>
+          <BlackJack />
         </Route>
       </BrowserRouter>
     </div>
