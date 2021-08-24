@@ -12,7 +12,7 @@ var NavBar = () => {
         <Link to='/howToPlay' className='navButton'>How To Play</Link>
       </Switch>
       <Switch>
-        <Link to='/about' className='navButton'>About Us</Link>
+        <Link to='/about' className='navButton'>About</Link>
       </Switch>
 
     </div>

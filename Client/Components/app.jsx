@@ -3,7 +3,8 @@ import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home.jsx';
 import About from './About.jsx';
-import HowToPlay from "./HowToPlay";
+import HowToPlay from './HowToPlay';
+import NotForMe from './NotForMe';
 
 var App = () => {
   return (
@@ -19,6 +20,9 @@ var App = () => {
         </Route>
         <Route path='/howToPlay' exact>
           <HowToPlay />
+        </Route>
+        <Route path='/NotForMe' exact>
+          <NotForMe />
         </Route>
       </BrowserRouter>
     </div>
