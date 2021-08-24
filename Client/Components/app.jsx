@@ -5,6 +5,8 @@ import Home from './Home.jsx';
 import About from './About.jsx';
 import HowToPlay from './HowToPlay';
 import NotForMe from './NotForMe';
+import LetsPlay from './LetsPlay.jsx';
+import CreateAccount from './CreateAccount.jsx';
 
 var App = () => {
   return (
@@ -23,6 +25,12 @@ var App = () => {
         </Route>
         <Route path='/NotForMe' exact>
           <NotForMe />
+        </Route>
+        <Route path='/LetsPlay' exact>
+          <LetsPlay />
+        </Route>
+        <Route path='/createAccount' exact>
+          <CreateAccount />
         </Route>
       </BrowserRouter>
     </div>

@@ -20,7 +20,7 @@
 .YesButton {
   background-color: rgb(32, 157, 32);
   color: white;
-  padding: 1em 1.5em;
+  padding: .5em 1em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -36,7 +36,7 @@
 .NoButton {
   background-color: red;
   color: white;
-  padding: 1em 1.5em;
+  padding: .5em 1em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -47,4 +47,11 @@
 
 .NoButton:active {
   background-color: black;
+}
+
+.inputs {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
