@@ -1,0 +1,50 @@
+.navButton {
+  background-color: rgb(252, 238, 238);
+  box-shadow: 0 5px 0 rgb(147, 137, 137);
+  color: rgb(0, 0, 0);
+  padding: .5em 1em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navButton:hover {
+  background-color: #9f4545;
+}
+
+.navButton:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.YesButton {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.YesButton:hover {
+  background-color: #555;
+}
+
+.YesButton:active {
+  background-color: black;
+}
+
+.NoButton {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.NoButton:hover {
+  background-color: #555;
+}
+
+.NoButton:active {
+  background-color: black;
+}
