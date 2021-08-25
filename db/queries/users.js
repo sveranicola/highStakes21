@@ -15,7 +15,7 @@ module.exports = {
     .then(data => callback(null, data))
     .catch(err => callback(err));
   },
-  availableUser: ({username, wordpass}, callback) => {
+  availableUser: (username, wordpass, callback) => {
     var psql = `SELECT EXISTS (SELECT 1 FROM users WHERE username = '${username}')`;
 
     client.query (psql)

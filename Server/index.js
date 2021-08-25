@@ -18,7 +18,7 @@ app.post('/createUser', (req, res) => {
 });
 
 app.get('/getUser', (req, res) => {
-  db.checkUser(req.body, (err, result) => {
+  db.checkUser(req.params, (err, result) => {
     if (err) {
       throw err;
     } else {
@@ -28,17 +28,19 @@ app.get('/getUser', (req, res) => {
 });
 
 app.get('/availableUser', (req, res) => {
-  db.availableUser(req.body, (err, result) => {
+  var request = JSON.parse(req.query[0]);
+  console.log("in the body" , typeof request);
+  db.availableUser(request.username, request.wordpass, (err, result) => {
     if (err) {
       throw err;
     } else {
-      res.send(result.rows);
+      res.send(result.rows[0]);
     }
   });
 });
 
 app.put('/userLost', (req, res) => {
-  db.loserAlert(req.body, (err, result) => {
+  db.loserAlert(req.params, (err, result) => {
     if (err) {
       throw err;
     } else {

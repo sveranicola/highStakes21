@@ -7,12 +7,12 @@ import HowToPlay from './HowToPlay';
 import NotForMe from './NotForMe';
 import LetsPlay from './LetsPlay.jsx';
 import CreateAccount from './CreateAccount.jsx';
-import BlackJack from './BlackJack';
+import CoinFlip from './CoinFlip';
 
 var App = () => {
   return (
     <div>
-      <h1>High Stakes 21</h1>
+      <h1>High Stakes</h1>
       <BrowserRouter>
         <NavBar />
         <Route path='/' exact>
@@ -33,8 +33,8 @@ var App = () => {
         <Route path='/createAccount' exact>
           <CreateAccount />
         </Route>
-        <Route path='/BlackJack' exact>
-          <BlackJack />
+        <Route path='/CoinFlip' exact>
+          <CoinFlip />
         </Route>
       </BrowserRouter>
     </div>

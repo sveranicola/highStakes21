@@ -14,9 +14,9 @@ var NavBar = () => {
       <Switch>
         <Link to='/about' className='navButton'>About</Link>
       </Switch>
-      <Switch>
-        <Link to='/BlackJack' className='navButton'>BlackJack</Link>
-      </Switch>
+      {/* <Switch>
+        <Link to='/CoinFlip' className='navButton'>CoinFLip</Link>
+      </Switch> */}
 
     </div>
   )
