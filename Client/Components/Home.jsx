@@ -14,7 +14,7 @@ var Home = () => {
           <Link to='/LetsPlay' className='YesButton'>Let's PLay</Link>
         </Switch>
         <Switch>
-          <Link to='/notForMe' className='NoButton'>Not For Me</Link>
+          <Link to='/notForMe' className='NoButton'>NOPE</Link>
         </Switch>
       </div>
 

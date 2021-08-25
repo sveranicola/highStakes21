@@ -1,11 +1,12 @@
-CREATE DATABASE BlackJack;
+-- CREATE DATABASE BlackJack;
 
-\c BlackJack;
+\c blackjack;
 
--- DROP TABLE users;
+DROP TABLE users;
 
 CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
   userName text,
-  wordPass text
+  wordPass text,
+  lost boolean
 )
