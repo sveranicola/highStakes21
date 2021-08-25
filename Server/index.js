@@ -29,7 +29,6 @@ app.get('/getUser', (req, res) => {
 
 app.get('/availableUser', (req, res) => {
   var request = JSON.parse(req.query[0]);
-  console.log("in the body" , typeof request);
   db.availableUser(request.username, request.wordpass, (err, result) => {
     if (err) {
       throw err;
